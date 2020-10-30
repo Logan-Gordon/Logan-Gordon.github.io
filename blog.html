@@ -23,7 +23,7 @@
     <div class="blog-masthead">
         <div class="container-fluid">
             <nav class="nav blog-nav">
-                <a class="nav-link " href="../home.html">Home</a>
+                <a class="nav-link " href="../index.html">Home</a>
                 <a class="nav-link active" href="../blog.html">Blog</a>
                 <a class="nav-link" href="../contact.html?">Contact</a>
                 <a class="nav-link" href="../about.html#">About Us</a>
@@ -42,7 +42,7 @@
     <div class="container-fluid">
 
         <div id="blogForm" style="display:none">
-            <form style="text-align:left">
+            <form style="text-align:left" onsubmit="newEntry(this)">
                 </br>
                 <h2 style="color:rgb(15, 15, 15) ">New Book Series</h2>
                 </br>
@@ -56,7 +56,7 @@
                 </br>
                 <input type="file" id="img" required="required" accept=".jpg, .jpeg, .png" /> Only accepts .jpg, .jpeg, .pgn </br>
                 </br>
-                <input type="submit" value="Submit New Entry" onclick="newEntry()"></input>
+                <input type="submit" value="Submit New Entry"></input>
                 </br>
                 </br>
             </form>
@@ -68,10 +68,6 @@
             <div class="col-sm-12 blog-main">
 
                 <div class="blog-post" id="blog-post">
-
-
-                </div>
-                <div class="blog-post" id="new-blog-post">
 
 
                 </div>

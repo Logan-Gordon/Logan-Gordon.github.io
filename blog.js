@@ -79,12 +79,14 @@ var show = function() {
 
 var newEntry = function() {
 
-    var blog2 = document.getElementById("blog-post");
-    var title2 = "asfd";
-    var book2 = "asdf";
-    var author2 = "asdrf";
-    var desc2 = "fdsa";
-    var cover2 = "../fellowship.jpg";
+    var blog = document.getElementById("blog-post");
+
+    var title2 = document.getElementById("sTitle").value;
+    var book2 = document.getElementById("bTitle").value;
+    var author2 = document.getElementById("auth").value;
+    var desc2 = document.getElementById("descrip").value;
+    var imgReader = new FileReader();
+    var cover2 = imgReader.readAsDataURL(document.getElementById("img").value);
 
     var div1 = document.createElement("div");
     var titleElem1 = document.createElement("h2");
@@ -106,6 +108,7 @@ var newEntry = function() {
     div1.appendChild(bookElem1);
     div1.appendChild(authorElem1);
     div1.appendChild(descElem1);
+    div1.appendChild(img1);
     div1.appendChild(clear1);
 
     blog2.appendChild(div1);
